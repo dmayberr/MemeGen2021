@@ -1,50 +1,35 @@
-// import React, { useState } from 'react'
+import './bootstrap.min.css'
 import './MemeGenForm.css'
 
-import './bootstrap.min.css'
-
-
-
 const MemeGenForm = () => {
-    
     return (
-        // <Container>
-        //     <Navbar expand="lg" bg="dark" variant="dark">
-        //         <Navbar.Brand>
-        //             <p className="display-2">MemeGen 2021</p>
-        //         </Navbar.Brand>
-        //     </Navbar>
-
-        // </Container>
-
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#home">
-                    MemeGen 2021
-                </a>
-
-                <div className="collapse navbar-collapse" id="navbarColor01">
-                    <ul class="navbar-nav me-auto">                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">
-                                Create New Meme
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">
-                                Pricing
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">
-                                About
-                            </a>
-                        </li>
-                        
-                    </ul>
+        <div className="row">
+            <div className="col">
+                <div className="card mb-3">
+                    <div className="card-body">
+                        <h3>Create Meme</h3>
+                        <div className="form-group generator-form">
+                            <label className="col-form-label mt-4" for="inputDefault">Image</label>
+                            <input type="text" className="form-control" placeholder="Image url" id="inputDefault" />
+                            <label className="col-form-label mt-4" for="inputDefault">Top Text</label>
+                            <input type="text" className="form-control" placeholder="Image url" id="inputDefault" />
+                            <label className="col-form-label mt-4" for="inputDefault">Bottom Text</label>
+                            <input type="text" className="form-control" placeholder="Image url" id="inputDefault" />
+                        </div>
+                    </div>           
                 </div>
             </div>
-        </nav>
+            <div className="col">
+            <div className="card mb-3">
+                    <div className="card-body">
+                        <h3>Preview</h3>
+                        <div className="generator-preview">
+                           
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </div>
     )
 }
 

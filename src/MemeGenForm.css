@@ -1,6 +1,9 @@
-
-#dlm-icon {
-    width: 50px;
-    padding: 5px;
+.generator-form {
+    width: 50%;
+    height: 400px;
 }
 
+.generator-preview {
+    width: 50%;
+    height: 400px;
+}
